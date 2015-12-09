@@ -1,0 +1,40 @@
+1. Explain the meaning of each field?
+	> drwxr-xr-x	: These are the permissions
+	> root		: This is the owner name
+	> bin		: This is the owner group
+	> 2048		: The file size in bits
+	> Dec 23 09:22	: The time of the last modification
+	> bin/ 		: The file/directory name
+
+2. There are a total of 10 bits in a file permission 'line'.
+Consider this example: drwxr-xr-x
+	> The first bit (d) represents the entry type or the type file that we are dealing with. 
+	> The first triad of the 9 permission bits represents the owner permissions. 
+		r = readable
+		w = writable
+		x = executable
+	> The second triad represents group member's permissions
+	> The last triad represents other user's permissions
+
+3. A User ID (UID) is used as the single identity for a user which is represented by a numerical value. The group ID (GID) works in the same fashion except for groups. 
+	> Commands: echo $UID or echo $GID or id
+
+4. After performing a chmod of 766 on a file, you would get the following permissions:
+	> -rwxrw-rw- 
+	> User: read, write, executable
+	> Groups: read, write
+	> Others: read, write
+
+5. The x bits of a directory means that the file is executable for the specified user(s).
+
+6. The superuser/root acts more or less as a system admin. This enables a user (once access is granted) to have total control of the system. 
+
+7. Whenever a process is started, it is assigned a process id (pid). 
+	> Try ps -a or cat test.c & grep a &
+
+8. With the sh command a & b & c & d &, all of the tasks are running in the background because they are terminated by the &. Since every command is followed by this &, there are no foreground processes. 
+
+9. Piping sends data from one file to another. In the sh cocmmand a | b | c | d, there are four processes occurring. 
+
+Side Note: 
+	> Redirection is denoted by the symbol '>'. Consider the statement ls > testFile. Instead of displaying the contents from the ls command, they are instead pushed into (redirected) the testFile. Therefore a cat call on testFile should display the contents of ls. 

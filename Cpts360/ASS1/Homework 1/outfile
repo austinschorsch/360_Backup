@@ -1,0 +1,120 @@
+enter main
+
+**************************************** Printing contents
+&argc=fff4e960 argv=fff4e9f4 env=fff4ea08
+&a=fff4e944 &b=fff4e948 &c=fff4e94c
+enter A
+&d=fff4e914 &e=fff4e918 &f=fff4e91c
+enter B
+&g=fff4e8e4 &h=fff4e8e8 &i=fff4e8ec
+enter C
+&u=fff4e8ac &v=fff4e8b0 &w=fff4e8b4
+
+**************************************** Printing stack frame link list
+FP=fff4e8c8-->fff4e8f8-->fff4e928-->fff4e958-->0
+
+**************************************** Printing the stack contents (from FP-8)
+1.     fff4e8a8,    Contents: fff4e8f8
+2.     fff4e8ac,    Contents:        a      # LOCAL u, contents displayed as 'a' for hex (10 in decimal)
+3.     fff4e8b0,    Contents:        b      # LOCAL v, contents displayed as 'b' for hex (11 in decimal)
+4.     fff4e8b4,    Contents:        c      # LOCAL w, contents displayed as 'c' for hex (12 in decimal)
+5.     fff4e8b8,    Contents:        4
+6.     fff4e8bc,    Contents: fff4e8bc
+7.     fff4e8c0,    Contents:        0      
+8.     fff4e8c4,    Contents:        0
+9.     fff4e8c8,    Contents: fff4e8f8      # STACK FRAME pointer for C()
+10.     fff4e8cc,    Contents:  80485af     # PC for stack frame of C()
+11.     fff4e8d0,    Contents:        7     # PARAMETER x for C() (value of g in B())
+12.     fff4e8d4,    Contents:        8     # PARAMETER y for C() (value of h in B())
+13.     fff4e8d8,    Contents: fff4e8e8
+14.     fff4e8dc,    Contents: fff4e8ec
+15.     fff4e8e0,    Contents: f7786ac0
+16.     fff4e8e4,    Contents:        7     # LOCAL g, contents are 7
+17.     fff4e8e8,    Contents:        8     # LOCAL h, contents are 8
+18.     fff4e8ec,    Contents:        9     # LOCAL i, contents are 9
+19.     fff4e8f0,    Contents:        0
+20.     fff4e8f4,    Contents:        0
+21.     fff4e8f8,    Contents: fff4e928     # STACK FRAME pointer for B()
+22.     fff4e8fc,    Contents:  8048547     # PC for stack frame of B()
+23.     fff4e900,    Contents:        4     # PARAMETER x for B() (value of d in A())
+24.     fff4e904,    Contents:        5     # PARAMETER y for B() (value of e in A())
+25.     fff4e908,    Contents: fff4e918
+26.     fff4e90c,    Contents: fff4e91c
+27.     fff4e910,    Contents: f7786ac0
+28.     fff4e914,    Contents:        4     # LOCAL d, contents are 4
+29.     fff4e918,    Contents:        5     # LOCAL e, contents are 5
+30.     fff4e91c,    Contents:        6     # LOCAL f, contents are 6
+31.     fff4e920,    Contents: fff4e960
+32.     fff4e924,    Contents: f77c3938
+33.     fff4e928,    Contents: fff4e958     # STACK FRAME pointer for A()
+34.     fff4e92c,    Contents:  80484df     # PC for stack frame of A()
+35.     fff4e930,    Contents:        1     # PARAMETER x for A() (value of a in main())
+36.     fff4e934,    Contents:        2     # PARAMETER y for A() (value of b in main())
+37.     fff4e938,    Contents: fff4e948
+38.     fff4e93c,    Contents: fff4e94c
+39.     fff4e940,    Contents: f77863c4
+40.     fff4e944,    Contents:        1
+41.     fff4e948,    Contents:        2
+42.     fff4e94c,    Contents:        3
+43.     fff4e950,    Contents:  80486e0
+44.     fff4e954,    Contents:        0
+45.     fff4e958,    Contents:        0
+46.     fff4e95c,    Contents: f75f8a63
+47.     fff4e960,    Contents:        4     # argc (Number of arguments passed in) 
+48.     fff4e964,    Contents: fff4e9f4
+49.     fff4e968,    Contents: fff4ea08
+50.     fff4e96c,    Contents: f77b0cea
+51.     fff4e970,    Contents:        4
+52.     fff4e974,    Contents: fff4e9f4
+53.     fff4e978,    Contents: fff4e994
+54.     fff4e97c,    Contents:  804a018
+55.     fff4e980,    Contents:  804822c
+56.     fff4e984,    Contents: f7786000
+57.     fff4e988,    Contents:        0
+58.     fff4e98c,    Contents:        0
+59.     fff4e990,    Contents:        0
+60.     fff4e994,    Contents: 7ce6a070
+61.     fff4e998,    Contents: 2a202461
+62.     fff4e99c,    Contents:        0
+63.     fff4e9a0,    Contents:        0
+64.     fff4e9a4,    Contents:        0
+65.     fff4e9a8,    Contents:        4
+66.     fff4e9ac,    Contents:  8048350
+67.     fff4e9b0,    Contents:        0
+68.     fff4e9b4,    Contents: f77b6500
+69.     fff4e9b8,    Contents: f75f8979
+70.     fff4e9bc,    Contents: f77c3000
+71.     fff4e9c0,    Contents:        4
+72.     fff4e9c4,    Contents:  8048350
+73.     fff4e9c8,    Contents:        0
+74.     fff4e9cc,    Contents:  8048371
+75.     fff4e9d0,    Contents:  804844d
+76.     fff4e9d4,    Contents:        4
+77.     fff4e9d8,    Contents: fff4e9f4
+78.     fff4e9dc,    Contents:  80486e0
+79.     fff4e9e0,    Contents:  8048750
+80.     fff4e9e4,    Contents: f77b1180
+81.     fff4e9e8,    Contents: fff4e9ec
+82.     fff4e9ec,    Contents:       1c
+83.     fff4e9f0,    Contents:        4
+84.     fff4e9f4,    Contents: fff502bf     # argv location (The argument vector of C strings; contains arguments strings as its elements)
+85.     fff4e9f8,    Contents: fff502c7
+86.     fff4e9fc,    Contents: fff502cb
+87.     fff4ea00,    Contents: fff502cf
+88.     fff4ea04,    Contents:        0
+89.     fff4ea08,    Contents: fff502d5     # env location (An array of char ptrs that ends with nullptr)
+90.     fff4ea0c,    Contents: fff502e0
+91.     fff4ea10,    Contents: fff502f3
+92.     fff4ea14,    Contents: fff50305
+93.     fff4ea18,    Contents: fff5031b
+94.     fff4ea1c,    Contents: fff50350
+95.     fff4ea20,    Contents: fff50373
+96.     fff4ea24,    Contents: fff503a8
+97.     fff4ea28,    Contents: fff503b3
+98.     fff4ea2c,    Contents: fff503c3
+99.     fff4ea30,    Contents: fff503da
+100.     fff4ea34,    Contents: fff503eb
+exit C
+exit B
+exit A
+exit main

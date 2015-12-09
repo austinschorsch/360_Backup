@@ -1,0 +1,23 @@
+1) D, All of the above
+
+2) Data section
+
+3) The return value register; keeps track of the value to be returned within the function
+
+4) Crt0.o, Crt0.o means "C runtime" -> 0 means -> "very beginning"
+
+5) The linker combines all the .o files and needed libraried into a single binary executable file. 
+
+6) Static linking and Dynamic Linking
+
+7) bss is the part of the Data segment which included UNinitialized global and static variables
+
+8) Concurrency is the illusion that your PC is executing multiple tasks simultaneously. 
+
+9) I/O devices include hard disks, CDROM, floppy disk, terminals, consoles, printers, etc. 
+
+10) binary executable files called a.out
+
+11) C
+
+ 

@@ -1,0 +1,70 @@
+main() in assembly call mymain() in C
+in mymain(): argc=5
+argv[0] = ./a.out
+argv[1] = one
+argv[2] = two
+argv[3] = three
+argv[4] = four
+====== Environment variables ======
+ENV[0]: XDG_VTNR=7
+ENV[1]: SSH_AGENT_PID=1483
+ENV[2]: XDG_SESSION_ID=c2
+ENV[3]: CLUTTER_IM_MODULE=xim
+ENV[4]: XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/aschorsch
+ENV[5]: GIO_LAUNCHED_DESKTOP_FILE_PID=1563
+ENV[6]: GPG_AGENT_INFO=/run/user/1000/keyring-0Cn0OF/gpg:0:1
+ENV[7]: TERM=xterm
+ENV[8]: SHELL=/bin/bash
+ENV[9]: XDG_MENU_PREFIX=gnome-
+ENV[10]: VTE_VERSION=3409
+ENV[11]: OLDPWD=/home/aschorsch/Cpts360/LAB1
+ENV[12]: GNOME_KEYRING_CONTROL=/run/user/1000/keyring-0Cn0OF
+ENV[13]: GTK_MODULES=pantheon-filechooser-module
+ENV[14]: USER=aschorsch
+ENV[15]: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+ENV[16]: XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+ENV[17]: XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+ENV[18]: SSH_AUTH_SOCK=/run/user/1000/keyring-0Cn0OF/ssh
+ENV[19]: DEFAULTS_PATH=/usr/share/gconf/pantheon.default.path
+ENV[20]: SESSION_MANAGER=local/austinschorsch:@/tmp/.ICE-unix/1372,unix/austinschorsch:/tmp/.ICE-unix/1372
+ENV[21]: GIO_LAUNCHED_DESKTOP_FILE=/etc/xdg/autostart/gnome-settings-daemon-pantheon.desktop
+ENV[22]: XDG_CONFIG_DIRS=/etc/xdg/xdg-pantheon:/etc/xdg
+ENV[23]: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+ENV[24]: DESKTOP_SESSION=pantheon
+ENV[25]: QT_IM_MODULE=xim
+ENV[26]: PWD=/home/aschorsch/Cpts360/LAB1/Lab1
+ENV[27]: XMODIFIERS=@im=ibus
+ENV[28]: GNOME_KEYRING_PID=1370
+ENV[29]: LANG=en_US.UTF-8
+ENV[30]: GDM_LANG=en
+ENV[31]: MANDATORY_PATH=/usr/share/gconf/pantheon.mandatory.path
+ENV[32]: GDMSESSION=pantheon
+ENV[33]: XDG_SEAT=seat0
+ENV[34]: HOME=/home/aschorsch
+ENV[35]: SHLVL=1
+ENV[36]: LANGUAGE=en
+ENV[37]: GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+ENV[38]: LOGNAME=aschorsch
+ENV[39]: PANTHEON_TERMINAL_ID=0
+ENV[40]: QT4_IM_MODULE=xim
+ENV[41]: XDG_DATA_DIRS=/usr/share/pantheon:/usr/local/share/:/usr/share/
+ENV[42]: DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-A35QVap4fY,guid=3c86d8920b586e5fa27d7b0955f30a68
+ENV[43]: LESSOPEN=| /usr/bin/lesspipe %s
+ENV[44]: GTK_CSD=1
+ENV[45]: PROMPT_COMMAND=__bp_precmd_invoke_cmd; dbus-send --type=method_call --session --dest=net.launchpad.pantheon-terminal /net/launchpad/pantheon_terminal org.pantheon.terminal.ProcessFinished string:$PANTHEON_TERMINAL_ID string:"$(history 1 | cut -c 8-)" >/dev/null 2>&1;  __bp_interactive_mode;
+ENV[46]: TEXTDOMAIN=im-config
+ENV[47]: XDG_RUNTIME_DIR=/run/user/1000
+ENV[48]: DISPLAY=:0
+ENV[49]: XDG_CURRENT_DESKTOP=Pantheon
+ENV[50]: GTK_IM_MODULE=ibus
+ENV[51]: LESSCLOSE=/usr/bin/lesspipe %s %s
+ENV[52]: TEXTDOMAINDIR=/usr/share/locale/
+ENV[53]: XAUTHORITY=/home/aschorsch/.Xauthority
+ENV[54]: _=./a.out
+---------- testing YOUR myprintf() ---------
+this is a test
+testing a=123 b=0x7B c=a s=testing
+string=testing string, a=-1024  b=1024   c=02000  d=0x400
+mymain() return to main() in assembly
+a=1234 b=5678
+

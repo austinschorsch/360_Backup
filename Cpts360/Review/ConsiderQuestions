@@ -1,0 +1,29 @@
+1) When inside a function, it can only access which of the following:
+    A: Global variables
+    B: Parameters passed in by caller
+    C: Local variables
+    D: All of the above
+
+2) Global and static local variables are in the combined ______ section. 
+
+3) EAX keeps track of what? 
+
+4) The CODE section begins with standard C startup code ______, which calls main. _____ literally means: ________. 
+
+5) What is the linker responsible for?
+
+6) What are the two methods of creating a binary executable file? 
+
+7) What does the bss register do? 
+
+8) What does concurrency refer to when talking about executing tasks?
+
+9) List out 5 components of I/O devices? 
+
+10) cc (or gcc) converts source files into _________.
+
+11) Which of the following is correct:
+    A: t.s -> ASSEMBLER -> t.o -> LINKER -> t.c -> COMPILER -> a.out
+    B: t.c -> COMPILER -> t.o -> LINKER -> t.s -> ASSEMBLER -> a.out
+    C: t.c -> COMPILER -> t.s -> ASSEMBLER -> t.o -> LINKER -> a.out
+    D: None of the above
